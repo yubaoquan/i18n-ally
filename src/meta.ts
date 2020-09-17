@@ -7,7 +7,7 @@ export const EXT_REVIEW_ID = 'i18n-ally-review'
 export const EXT_LEGACY_ID = 'antfu.vue-i18n-ally'
 export const EXT_LEGACY_NAMESPACE = 'vue-i18n-ally'
 
-export const KEY_REG_DEFAULT = '[\\w\\d\\. \\-\\[\\]\\:]*?'
+export const KEY_REG_DEFAULT = '[\\w\\d\\. \\-\\[\\]\\\/:]*?'
 export const KEY_REG_ALL = '.*?'
 
 export const THROTTLE_DELAY = 800
@@ -20,3 +20,11 @@ export const linkedKeyModifiers = {
   upper: (str: string) => str.toLocaleUpperCase(),
   lower: (str: string) => str.toLocaleLowerCase(),
 } as Record<string, (str: string) => string>
+
+export const DEFAULT_LOCALE_COUNTRY_MAP = {
+  en: 'us',
+  zh: 'cn',
+  de: 'de',
+  fr: 'fr',
+  ja: 'ja',
+}

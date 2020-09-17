@@ -1,7 +1,7 @@
 import * as yaml from 'js-yaml'
 import YAML from 'yaml'
 import _ from 'lodash'
-import { KeyInDocument } from '../core'
+import { KeyInDocument, Config } from '../core'
 import { Parser } from './base'
 
 export class YamlParser extends Parser {
@@ -12,7 +12,7 @@ export class YamlParser extends Parser {
   }
 
   async parse(text: string) {
-    return yaml.safeLoad(text)
+    return yaml.safeLoad(text, Config.parserOptions?.yaml?.load) as Object
   }
 
   async dump(object: object, sort: boolean) {
@@ -20,6 +20,7 @@ export class YamlParser extends Parser {
     return yaml.safeDump(object, {
       indent: this.options.indent,
       sortKeys: sort,
+      ...Config.parserOptions?.yaml?.dump,
     })
   }
 
@@ -31,7 +32,7 @@ export class YamlParser extends Parser {
     cst.setOrigRanges() // Workaround for CRLF eol, https://github.com/eemeli/yaml/issues/127
     const doc = new YAML.Document({ keepCstNodes: true }).parse(cst[0])
 
-    const findPairs = (node: YAML.ast.AstNode | YAML.ast.Pair | null, path: string[] = []): KeyInDocument[] => {
+    const findPairs = (node: any, path: string[] = []): KeyInDocument[] => {
       if (!node)
         return []
       if (node.type === 'MAP' || node.type === 'SEQ')

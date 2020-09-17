@@ -54,17 +54,19 @@ class I18nextFramework extends Framework {
   }
 
   rewriteKeys(key: string, source: RewriteKeySource, context: RewriteKeyContext = {}) {
+    const dotedKey = key.split(this.namespaceDelimiter).join('.')
+
     // when explicitly set the namespace, ignore current namespace scope
     if (
       key.includes(this.namespaceDelimiter)
       && context.namespace
-      && key.startsWith(context.namespace)
+      && dotedKey.startsWith(context.namespace.split(this.namespaceDelimiter).join('.'))
     )
       // +1 for the an extra `.`
       key = key.slice(context.namespace.length + 1)
 
     // replace colons
-    return key.replace(this.namespaceDelimiter, '.')
+    return dotedKey
   }
 
   // useTranslation
@@ -75,7 +77,7 @@ class I18nextFramework extends Framework {
 
     const ranges: ScopeRange[] = []
     const text = document.getText()
-    const reg = /useTranslation\((?:['"`](.*)['"`]|)\)/g
+    const reg = /useTranslation\(\s*\[?\s*['"`](.*)['"`]/g
 
     for (const match of text.matchAll(reg)) {
       if (match?.index == null)

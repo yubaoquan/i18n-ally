@@ -1,4 +1,4 @@
-import { window, DecorationOptions, Range, Disposable, TextEditorDecorationType, TextEditor, workspace, TextDocument } from 'vscode'
+import { window, DecorationOptions, Range, Disposable, TextEditorDecorationType, TextEditor, workspace, TextDocument, languages, Hover } from 'vscode'
 import throttle from 'lodash/throttle'
 import { Global, KeyDetector, Config, Loader, CurrentFile, KeyUsages } from '../core'
 import { ExtensionModule } from '../modules'
@@ -187,12 +187,10 @@ const annotation: ExtensionModule = (ctx) => {
           after: {
             color,
             contentText: (showAnnotations && locale) ? text : '',
-            fontWeight: 'normal',
             fontStyle: 'normal',
             border: inplace ? `0.5px solid ${borderColor}; border-radius: 2px;` : '',
           },
         },
-        hoverMessage: createHover(key, maxLength, undefined, i),
         gutterType,
       })
     }
@@ -224,12 +222,13 @@ const annotation: ExtensionModule = (ctx) => {
   }
 
   const throttledUpdate = throttle(() => update(), THROTTLE_DELAY)
+  const throttledRefresh = throttle(() => refresh(), THROTTLE_DELAY)
 
   const disposables: Disposable[] = []
   CurrentFile.loader.onDidChange(throttledUpdate, null, disposables)
-  window.onDidChangeActiveTextEditor(throttledUpdate, null, disposables)
   Global.reviews.onDidChange(throttledUpdate, null, disposables)
-  window.onDidChangeTextEditorSelection(refresh, null, disposables)
+  window.onDidChangeActiveTextEditor(throttledUpdate, null, disposables)
+  window.onDidChangeTextEditorSelection(throttledRefresh, null, disposables)
   workspace.onDidChangeTextDocument(
     (e) => {
       if (e.document === window.activeTextEditor?.document) {
@@ -240,6 +239,30 @@ const annotation: ExtensionModule = (ctx) => {
     null,
     disposables,
   )
+
+  // hover
+  languages.registerHoverProvider('*', {
+    provideHover(document, position, token) {
+      if (document !== _current_doc || !_current_usages)
+        return
+
+      const offset = document.offsetAt(position)
+      const key = _current_usages.keys.find(k => k.start <= offset && k.end >= offset)
+      if (!key)
+        return
+
+      const markdown = createHover(key.key, Config.annotationMaxLength, undefined, _current_usages.keys.indexOf(key))
+      if (!markdown)
+        return
+
+      return new Hover(
+        markdown,
+        new Range(
+          document.positionAt(key.start),
+          document.positionAt(key.end),
+        ))
+    },
+  })
 
   update()
 

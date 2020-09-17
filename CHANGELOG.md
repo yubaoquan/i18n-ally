@@ -2,6 +2,261 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.19](https://github.com/antfu/i18n-ally/compare/v2.3.18...v2.3.19) (2020-09-16)
+
+
+### 🐞 Bug Fixes
+
+* throttledRefresh ([c33c19f](https://github.com/antfu/i18n-ally/commit/c33c19f478447dc7e994d739cdee609e1c58c014))
+
+### [2.3.18](https://github.com/antfu/i18n-ally/compare/v2.3.17...v2.3.18) (2020-09-14)
+
+
+### ⚡ Features
+
+* bring back "replace_with", close [#398](https://github.com/antfu/i18n-ally/issues/398) ([25015e9](https://github.com/antfu/i18n-ally/commit/25015e9a18dc990aeec223993f6af023c6004e7a))
+
+### [2.3.17](https://github.com/antfu/i18n-ally/compare/v2.3.16...v2.3.17) (2020-09-10)
+
+
+### ⚡ Features
+
+* allows to insert key when the selection is empty, resolves [#378](https://github.com/antfu/i18n-ally/issues/378) ([3d75677](https://github.com/antfu/i18n-ally/commit/3d75677988b692af0b63a87fdc50cdbe2cad9550))
+
+### [2.3.16](https://github.com/antfu/i18n-ally/compare/v2.3.15...v2.3.16) (2020-09-10)
+
+### [2.3.15](https://github.com/antfu/i18n-ally/compare/v2.3.14...v2.3.15) (2020-09-10)
+
+### [2.3.14](https://github.com/antfu/i18n-ally/compare/v2.3.13...v2.3.14) (2020-09-10)
+
+### [2.3.13](https://github.com/antfu/i18n-ally/compare/v2.3.12...v2.3.13) (2020-09-10)
+
+### [2.3.12](https://github.com/antfu/i18n-ally/compare/v2.3.11...v2.3.12) (2020-09-10)
+
+### [2.3.11](https://github.com/antfu/i18n-ally/compare/v2.3.10...v2.3.11) (2020-09-10)
+
+
+### 🐞 Bug Fixes
+
+* close [#392](https://github.com/antfu/i18n-ally/issues/392) ([a188e5f](https://github.com/antfu/i18n-ally/commit/a188e5faa5054ea4847c27eb2676b4cbc631d450))
+
+
+### ⚡ Features
+
+* support wildcard for `keysInUse`, close [#391](https://github.com/antfu/i18n-ally/issues/391) ([6929cd0](https://github.com/antfu/i18n-ally/commit/6929cd0960ad6170f52676fd4b8956494cbeb8d6))
+
+### [2.3.10](https://github.com/antfu/i18n-ally/compare/v2.3.9...v2.3.10) (2020-09-01)
+
+
+### 🌍 Internationalization
+
+* modified to commonly used words in zh-tw ([#389](https://github.com/antfu/i18n-ally/issues/389)) ([02cc89b](https://github.com/antfu/i18n-ally/commit/02cc89beb4d167d69baf7143a6ecdbffe331f8ee))
+
+### [2.3.9](https://github.com/antfu/i18n-ally/compare/v2.3.8...v2.3.9) (2020-08-30)
+
+
+### 🐞 Bug Fixes
+
+* svg in readme ([0f141a3](https://github.com/antfu/i18n-ally/commit/0f141a3d39027fa60c39dbc19db71419a6cb10fe))
+
+### [2.3.8](https://github.com/antfu/i18n-ally/compare/v2.3.7...v2.3.8) (2020-08-30)
+
+
+### ⚡ Features
+
+* add {fileName} variable support for config.keyPrefix ([#385](https://github.com/antfu/i18n-ally/issues/385)) ([992b870](https://github.com/antfu/i18n-ally/commit/992b870f8b48cb1572e459f6ac4fc0037d20f018))
+
+
+### 🐞 Bug Fixes
+
+* [#387](https://github.com/antfu/i18n-ally/issues/387) ([5ca8229](https://github.com/antfu/i18n-ally/commit/5ca8229b7f2ee06e7fb24d492c0ab7c2712a9a7e))
+
+### [2.3.7](https://github.com/antfu/i18n-ally/compare/v2.3.6...v2.3.7) (2020-08-30)
+
+
+### 🐞 Bug Fixes
+
+* [#374](https://github.com/antfu/i18n-ally/issues/374) ([12d31fc](https://github.com/antfu/i18n-ally/commit/12d31fc0dee0809a10a1681e8961743b5621e221))
+* [#386](https://github.com/antfu/i18n-ally/issues/386) ([2eab85a](https://github.com/antfu/i18n-ally/commit/2eab85a47aa75037f3a54670f8f2264b3e358db4))
+
+### [2.3.6](https://github.com/antfu/i18n-ally/compare/v2.3.5...v2.3.6) (2020-08-20)
+
+
+### 🐞 Bug Fixes
+
+* close [#373](https://github.com/antfu/i18n-ally/issues/373) ([d04c27f](https://github.com/antfu/i18n-ally/commit/d04c27fdde290cd95c385d0f8ef9c9f8fa7c8000))
+
+### [2.3.5](https://github.com/antfu/i18n-ally/compare/v2.3.4...v2.3.5) (2020-08-19)
+
+
+### 🐞 Bug Fixes
+
+* lint ([dab4ef2](https://github.com/antfu/i18n-ally/commit/dab4ef2d3f4de655b1ab3d0abfc5af23b6f3ca5a))
+
+### [2.3.4](https://github.com/antfu/i18n-ally/compare/v2.3.3...v2.3.4) (2020-08-19)
+
+
+### 🐞 Bug Fixes
+
+* **extract:** make replacing option always shown ([7d1a523](https://github.com/antfu/i18n-ally/commit/7d1a5236d4cd7bf5ebd1ad1840f3a01f6c252cda))
+
+### [2.3.3](https://github.com/antfu/i18n-ally/compare/v2.3.2...v2.3.3) (2020-08-17)
+
+### [2.3.2](https://github.com/antfu/i18n-ally/compare/v2.3.1...v2.3.2) (2020-08-12)
+
+### [2.3.1](https://github.com/antfu/i18n-ally/compare/v2.3.0...v2.3.1) (2020-08-12)
+
+
+### ⚡ Features
+
+* improve extracting command ([2bd4855](https://github.com/antfu/i18n-ally/commit/2bd4855a4071370bcafdd44ba5951d64a364e9cf)), closes [#369](https://github.com/antfu/i18n-ally/issues/369)
+
+
+### 🌍 Internationalization
+
+* update zh-cn & zh-tw ([a980d44](https://github.com/antfu/i18n-ally/commit/a980d44d531d72707dd3c9b291cc07b5cd967b1c))
+
+## [2.3.0](https://github.com/antfu/i18n-ally/compare/v2.2.16...v2.3.0) (2020-08-12)
+
+
+### ⚡ Features
+
+* added keypath autocompletion ([#367](https://github.com/antfu/i18n-ally/issues/367)) ([76d31b4](https://github.com/antfu/i18n-ally/commit/76d31b45f8ab38c55db9872fce89cb1aac6a007d))
+* better extrat prompt ([1c8a33f](https://github.com/antfu/i18n-ally/commit/1c8a33fc511ac9f477af70a5f09738a736cf7683))
+
+### [2.2.16](https://github.com/antfu/i18n-ally/compare/v2.2.15...v2.2.16) (2020-08-10)
+
+
+### 🐞 Bug Fixes
+
+* i18n ([f637b2b](https://github.com/antfu/i18n-ally/commit/f637b2b8c802a57e446f0d5a74e303fdba1779a6))
+
+### [2.2.15](https://github.com/antfu/i18n-ally/compare/v2.2.11...v2.2.15) (2020-08-10)
+
+
+### 🐞 Bug Fixes
+
+* **actions:** publish script ([c8ce53d](https://github.com/antfu/i18n-ally/commit/c8ce53df6fb22cc959def17106d86b996d7ca5c8))
+
+### [2.2.14](https://github.com/antfu/i18n-ally/compare/v2.2.13...v2.2.14) (2020-08-10)
+
+### [2.2.13](https://github.com/antfu/i18n-ally/compare/v2.2.12...v2.2.13) (2020-08-10)
+
+
+### 🐞 Bug Fixes
+
+* engine version ([e5db25d](https://github.com/antfu/i18n-ally/commit/e5db25dbec8da1605cd4130db818082d04810049))
+
+### [2.2.12](https://github.com/antfu/i18n-ally/compare/v2.2.11...v2.2.12) (2020-08-10)
+
+
+### 🐞 Bug Fixes
+
+* **actions:** publish script ([c187d00](https://github.com/antfu/i18n-ally/commit/c187d009d80244273904e373a225643f29787e9d))
+
+### [2.2.11](https://github.com/antfu/i18n-ally/compare/v2.2.10...v2.2.11) (2020-08-10)
+
+
+### ⚡ Features
+
+* update vue-i18n match regex ([9da2a6d](https://github.com/antfu/i18n-ally/commit/9da2a6d31d20f26753a8635dbf0580f69970d421))
+
+### [2.2.10](https://github.com/antfu/i18n-ally/compare/v2.2.9...v2.2.10) (2020-07-25)
+
+
+### 🐞 Bug Fixes
+
+* replaceAll ([de772e8](https://github.com/antfu/i18n-ally/commit/de772e81cb3b2f3ef69a506e0ca2c3866f195f1a))
+
+### [2.2.9](https://github.com/antfu/i18n-ally/compare/v2.2.8...v2.2.9) (2020-07-14)
+
+
+### 🐞 Bug Fixes
+
+* close [#342](https://github.com/antfu/i18n-ally/issues/342) ([175e23d](https://github.com/antfu/i18n-ally/commit/175e23d4935be30733e39f94141687ca8de0fa75))
+* close [#350](https://github.com/antfu/i18n-ally/issues/350) ([a479d25](https://github.com/antfu/i18n-ally/commit/a479d2529b87f796f3b87aa55df516ef07ebb09a))
+
+### [2.2.8](https://github.com/antfu/i18n-ally/compare/v2.2.7...v2.2.8) (2020-07-09)
+
+
+### ⚡ Features
+
+* add rename key icon in Editor UI, resolve [#335](https://github.com/antfu/i18n-ally/issues/335) ([616e62a](https://github.com/antfu/i18n-ally/commit/616e62ae1737d8fc8f5e186fa090bf6c59662664))
+
+
+### 🐞 Bug Fixes
+
+* resolve [#332](https://github.com/antfu/i18n-ally/issues/332) ([cd36fb4](https://github.com/antfu/i18n-ally/commit/cd36fb4b5fb3c01b8fe4c0c30a360f79dc1ce48c))
+* typing errors ([56216a0](https://github.com/antfu/i18n-ally/commit/56216a05d669aa320f37909f75b3b6e9c3151f1f))
+* **flutter:** mutliline regex, fix [#344](https://github.com/antfu/i18n-ally/issues/344) ([cb35395](https://github.com/antfu/i18n-ally/commit/cb353956db8a59728c17868a6268e121529a7fbd))
+
+### [2.2.7](https://github.com/antfu/i18n-ally/compare/v2.2.6...v2.2.7) (2020-06-18)
+
+### [2.2.6](https://github.com/antfu/i18n-ally/compare/v2.2.5...v2.2.6) (2020-06-16)
+
+
+### ⚡ Features
+
+* **ngx-translate:** add new usage, reslove [#333](https://github.com/antfu/i18n-ally/issues/333) ([b7481d7](https://github.com/antfu/i18n-ally/commit/b7481d7428baea0c4eeac9848ee1ba75317ddbd0))
+* Lightbulb will recommend using existing translations that match if any are found antfu[#326](https://github.com/antfu/i18n-ally/issues/326) ([#331](https://github.com/antfu/i18n-ally/issues/331)) ([f4e1e88](https://github.com/antfu/i18n-ally/commit/f4e1e88a372f4b37474e55045b4df79f452eaab2))
+
+### [2.2.5](https://github.com/antfu/i18n-ally/compare/v2.2.4...v2.2.5) (2020-06-12)
+
+
+### 🐞 Bug Fixes
+
+* po-parser ([#319](https://github.com/antfu/i18n-ally/issues/319)) ([7b0c902](https://github.com/antfu/i18n-ally/commit/7b0c902957b7ec365c88151b18cd6d80def32c54))
+
+
+### 🔮 Refactor
+
+* improve hover performance ([25730cb](https://github.com/antfu/i18n-ally/commit/25730cbf39778281653754e259891ba99ea1140b))
+
+
+### ⚡ Features
+
+* new config parserOptions ([7a1adb9](https://github.com/antfu/i18n-ally/commit/7a1adb976babfa0f5f20574a6086f1ac061399ec))
+
+### [2.2.4](https://github.com/antfu/i18n-ally/compare/v2.2.3...v2.2.4) (2020-05-29)
+
+
+### 🐞 Bug Fixes
+
+* handle flags more properly, [#313](https://github.com/antfu/i18n-ally/issues/313) ([141a561](https://github.com/antfu/i18n-ally/commit/141a56145f5e48d7b10d2dd791dee017d9df701c))
+
+### [2.2.3](https://github.com/antfu/i18n-ally/compare/v2.2.2...v2.2.3) (2020-05-28)
+
+
+### 🐞 Bug Fixes
+
+* **ruby-rails:** support more extensions ([9b334a2](https://github.com/antfu/i18n-ally/commit/9b334a22435a4a86f4fb6cf6a07b4069ef87c5fc))
+* typing ([5d22655](https://github.com/antfu/i18n-ally/commit/5d226552713b907cf06ffaf5b0352d9917d8773e))
+* **ruby-rails:** improve partials ([c263ba2](https://github.com/antfu/i18n-ally/commit/c263ba2bdc4483f437e6e5c4fe62ede4e38214c3))
+
+### [2.2.2](https://github.com/antfu/i18n-ally/compare/v2.2.1...v2.2.2) (2020-05-28)
+
+
+### ⚡ Features
+
+* new config to disable flags, [#313](https://github.com/antfu/i18n-ally/issues/313) ([5b5c181](https://github.com/antfu/i18n-ally/commit/5b5c181dbe9c57d273f5970d5898816a4aa7b7fe))
+
+
+### 🐞 Bug Fixes
+
+* **ruby-rails:** partials starting underscore, fix [#317](https://github.com/antfu/i18n-ally/issues/317) ([a3d6dbb](https://github.com/antfu/i18n-ally/commit/a3d6dbb8b3d3edc3205074b53924f88dc3422cb5))
+
+### [2.2.1](https://github.com/antfu/i18n-ally/compare/v2.2.0...v2.2.1) (2020-05-23)
+
+
+### ⚡ Features
+
+* Add 2 new options to targetPickingStrategy ([#312](https://github.com/antfu/i18n-ally/issues/312)) ([641c637](https://github.com/antfu/i18n-ally/commit/641c6377dc81940324b1a7c9b1751a3b2424adee))
+
+
+### 🔮 Refactor
+
+* fix typo ([d2c1d5d](https://github.com/antfu/i18n-ally/commit/d2c1d5d92f46ba7904d89d12cae6ebd038fe7a76))
+
 ## [2.2.0](https://github.com/antfu/i18n-ally/compare/v2.1.6...v2.2.0) (2020-05-21)
 
 

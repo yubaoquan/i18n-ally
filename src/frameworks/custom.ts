@@ -42,7 +42,7 @@ class CustomFramework extends Framework {
 
     try {
       const raw = File.readSync(filename)
-      this.data = YAML.safeLoad(raw)
+      this.data = YAML.safeLoad(raw) as any
       Log.info(`🍱 Custom framework setting loaded. \n${JSON.stringify(this.data, null, 2)}\n`)
       return true
     }
@@ -69,6 +69,7 @@ class CustomFramework extends Framework {
     return id
   }
 
+  // @ts-expect-error
   get monopoly() {
     return this.data?.monopoly || false
   }
